@@ -10,9 +10,9 @@ interface PhotoItem {
 const PHOTOS: PhotoItem[] = [
   {
     id: 'photo-1',
-    title: 'Mountain Lake Reflection',
-    description: 'Serene alpine waters mirroring the morning sunrise peaks.',
-    url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=600&fit=crop&q=80',
+    title: 'Bob Ross Painting',
+    description: 'A scenic landscape painting by Bob Ross featured at auction.',
+    url: 'https://www.orlandosentinel.com/wp-content/uploads/2025/11/Bob_Ross_Auction_05115.jpg?w=1800&resize=1800,1800',
   },
   {
     id: 'photo-2',
