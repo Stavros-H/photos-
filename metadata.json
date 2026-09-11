@@ -1,0 +1,8 @@
+{
+  "name": "Photos",
+  "description": "A 3x3 photo grid gallery with equal dimension placeholder photos and titles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2344403c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect width='18' height='18' x='3' y='3' rx='2' ry='2'/><circle cx='9' cy='9' r='2'/><path d='m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos</title>
+    <meta name="description" content="A 3x3 photo grid gallery with equal dimension placeholder photos and titles." />
+    <meta property="og:title" content="Photos" />
+    <meta property="og:description" content="A 3x3 photo grid gallery with equal dimension placeholder photos and titles." />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        min-height: 100vh;
+        padding: 2.5rem 1rem;
+      }
+      .gallery-container {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+      .gallery-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .gallery-header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #0f172a;
+        letter-spacing: -0.025em;
+        margin-bottom: 0.5rem;
+      }
+      .gallery-header p {
+        font-size: 0.95rem;
+        color: #64748b;
+      }
+      /* 3x3 Photo Grid */
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      @media (max-width: 840px) {
+        .photo-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.25rem;
+        }
+      }
+      @media (max-width: 540px) {
+        .photo-grid {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+      }
+      /* Photo Card */
+      .photo-card {
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+      }
+      .photo-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+      }
+      /* Equal image dimensions */
+      .photo-img-wrapper {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        background-color: #e2e8f0;
+        overflow: hidden;
+        position: relative;
+      }
+      .photo-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      .photo-card:hover .photo-img-wrapper img {
+        transform: scale(1.04);
+      }
+      .photo-details {
+        padding: 1rem 1.25rem;
+      }
+      .photo-title {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #0f172a;
+        margin-bottom: 0.25rem;
+      }
+      .photo-description {
+        font-size: 0.85rem;
+        color: #64748b;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="photo-gallery" class="gallery-container">
+        <header id="gallery-header" class="gallery-header">
+          <h1 id="gallery-main-title">Photo Gallery</h1>
+          <p id="gallery-subtitle">A curated 3x3 collection of placeholder photos and captions.</p>
+        </header>
+
+        <main id="photo-grid-container" class="photo-grid">
+          <!-- Photo 1 -->
+          <article id="photo-card-1" class="photo-card">
+            <div id="photo-img-wrapper-1" class="photo-img-wrapper">
+              <img id="photo-img-1" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=600&fit=crop&q=80" alt="Mountain Lake Reflection" loading="lazy" />
+            </div>
+            <div id="photo-details-1" class="photo-details">
+              <h2 id="photo-title-1" class="photo-title">Mountain Lake Reflection</h2>
+              <p id="photo-desc-1" class="photo-description">Serene alpine waters mirroring the morning sunrise peaks.</p>
+            </div>
+          </article>
+
+          <!-- Photo 2 -->
+          <article id="photo-card-2" class="photo-card">
+            <div id="photo-img-wrapper-2" class="photo-img-wrapper">
+              <img id="photo-img-2" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=600&fit=crop&q=80" alt="Misty Forest Canopy" loading="lazy" />
+            </div>
+            <div id="photo-details-2" class="photo-details">
+              <h2 id="photo-title-2" class="photo-title">Misty Forest Canopy</h2>
+              <p id="photo-desc-2" class="photo-description">Gentle fog settling over a dense evergreen hillside.</p>
+            </div>
+          </article>
+
+          <!-- Photo 3 -->
+          <article id="photo-card-3" class="photo-card">
+            <div id="photo-img-wrapper-3" class="photo-img-wrapper">
+              <img id="photo-img-3" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=600&fit=crop&q=80" alt="Architectural Lines" loading="lazy" />
+            </div>
+            <div id="photo-details-3" class="photo-details">
+              <h2 id="photo-title-3" class="photo-title">Architectural Lines</h2>
+              <p id="photo-desc-3" class="photo-description">Geometric glass facade reflecting high-contrast urban sky.</p>
+            </div>
+          </article>
+
+          <!-- Photo 4 -->
+          <article id="photo-card-4" class="photo-card">
+            <div id="photo-img-wrapper-4" class="photo-img-wrapper">
+              <img id="photo-img-4" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=600&fit=crop&q=80" alt="Tropical Ocean Shore" loading="lazy" />
+            </div>
+            <div id="photo-details-4" class="photo-details">
+              <h2 id="photo-title-4" class="photo-title">Tropical Ocean Shore</h2>
+              <p id="photo-desc-4" class="photo-description">Crystal clear turquoise waters washing over warm sands.</p>
+            </div>
+          </article>
+
+          <!-- Photo 5 -->
+          <article id="photo-card-5" class="photo-card">
+            <div id="photo-img-wrapper-5" class="photo-img-wrapper">
+              <img id="photo-img-5" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=600&fit=crop&q=80" alt="Desert Road Horizon" loading="lazy" />
+            </div>
+            <div id="photo-details-5" class="photo-details">
+              <h2 id="photo-title-5" class="photo-title">Desert Road Horizon</h2>
+              <p id="photo-desc-5" class="photo-description">An open highway stretching toward rugged canyon cliffs.</p>
+            </div>
+          </article>
+
+          <!-- Photo 6 -->
+          <article id="photo-card-6" class="photo-card">
+            <div id="photo-img-wrapper-6" class="photo-img-wrapper">
+              <img id="photo-img-6" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&h=600&fit=crop&q=80" alt="Coastal Wooden Cabin" loading="lazy" />
+            </div>
+            <div id="photo-details-6" class="photo-details">
+              <h2 id="photo-title-6" class="photo-title">Coastal Wooden Cabin</h2>
+              <p id="photo-desc-6" class="photo-description">Quiet wooden retreat nestled along the rocky shoreline.</p>
+            </div>
+          </article>
+
+          <!-- Photo 7 -->
+          <article id="photo-card-7" class="photo-card">
+            <div id="photo-img-wrapper-7" class="photo-img-wrapper">
+              <img id="photo-img-7" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&h=600&fit=crop&q=80" alt="Minimalist Interior" loading="lazy" />
+            </div>
+            <div id="photo-details-7" class="photo-details">
+              <h2 id="photo-title-7" class="photo-title">Minimalist Interior</h2>
+              <p id="photo-desc-7" class="photo-description">Clean angles and soft ambient lighting in a modern room.</p>
+            </div>
+          </article>
+
+          <!-- Photo 8 -->
+          <article id="photo-card-8" class="photo-card">
+            <div id="photo-img-wrapper-8" class="photo-img-wrapper">
+              <img id="photo-img-8" src="https://images.unsplash.com/photo-1517824806704-9040b037703b?w=600&h=600&fit=crop&q=80" alt="Golden Autumn Forest" loading="lazy" />
+            </div>
+            <div id="photo-details-8" class="photo-details">
+              <h2 id="photo-title-8" class="photo-title">Golden Autumn Forest</h2>
+              <p id="photo-desc-8" class="photo-description">Vibrant amber foliage glowing in the late afternoon sun.</p>
+            </div>
+          </article>
+
+          <!-- Photo 9 -->
+          <article id="photo-card-9" class="photo-card">
+            <div id="photo-img-wrapper-9" class="photo-img-wrapper">
+              <img id="photo-img-9" src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&h=600&fit=crop&q=80" alt="Alpine Snow Peak" loading="lazy" />
+            </div>
+            <div id="photo-details-9" class="photo-details">
+              <h2 id="photo-title-9" class="photo-title">Alpine Snow Peak</h2>
+              <p id="photo-desc-9" class="photo-description">Dramatic snow-dusted summit rising into the azure sky.</p>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
