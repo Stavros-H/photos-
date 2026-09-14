@@ -34,9 +34,9 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-5',
-    title: 'Desert Road Horizon',
-    description: 'An open highway stretching toward rugged canyon cliffs.',
-    url: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=600&fit=crop&q=80',
+    title: 'Classic Wooden Guitar Toy',
+    description: 'A miniature acoustic wooden guitar instrument for aspiring young musicians.',
+    url: 'images/wooden-guitar-toy.jpg',
   },
   {
     id: 'photo-6',
