@@ -28,9 +28,9 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-4',
-    title: 'Tropical Ocean Shore',
-    description: 'Crystal clear turquoise waters washing over warm sands.',
-    url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=600&fit=crop&q=80',
+    title: 'Ludwig van Beethoven',
+    description: 'Portrait of the legendary German composer and pianist.',
+    url: 'images/beethoven.jpg',
   },
   {
     id: 'photo-5',
