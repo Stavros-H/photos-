@@ -22,9 +22,9 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-3',
-    title: 'Architectural Lines',
-    description: 'Geometric glass facade reflecting high-contrast urban sky.',
-    url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=600&fit=crop&q=80',
+    title: 'Bold and Brash',
+    description: "Squidward Tentacles' iconic avant-garde painting, Bold and Brash.",
+    url: 'images/Bold_and_Brash.png',
   },
   {
     id: 'photo-4',
