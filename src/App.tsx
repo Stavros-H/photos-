@@ -16,9 +16,9 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-2',
-    title: 'Misty Forest Canopy',
-    description: 'Gentle fog settling over a dense evergreen hillside.',
-    url: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=600&fit=crop&q=80',
+    title: 'Graftobian No. 10 Flat Brush',
+    description: 'Professional flat brush for precise strokes and smooth application.',
+    url: 'images/78053-no10-Flat-min.jpg',
   },
   {
     id: 'photo-3',
