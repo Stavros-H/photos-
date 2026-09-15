@@ -40,9 +40,9 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-6',
-    title: 'Coastal Wooden Cabin',
-    description: 'Quiet wooden retreat nestled along the rocky shoreline.',
-    url: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&h=600&fit=crop&q=80',
+    title: 'Sheet Music Score',
+    description: 'Musical score notation sheet from MuseScore.',
+    url: 'https://musescore.com/static/musescore/scoredata/g/e52f81502d25aeb40d2a15b2a9c2af9cede5f909/score_0.svg?no-cache=1715695802',
   },
   {
     id: 'photo-7',
