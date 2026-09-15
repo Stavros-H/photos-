@@ -23,26 +23,26 @@ const PHOTOS: PhotoItem[] = [
   {
     id: 'photo-3',
     title: 'Bold and Brash',
-    description: "Squidward Tentacles' iconic avant-garde painting, Bold and Brash.",
+    description: "Some might say that this isn't a real world example, but they would show boldness and brashness. How painting (what?)",
     url: 'images/Bold_and_Brash.png',
   },
   {
     id: 'photo-4',
     title: 'Ludwig van Beethoven',
-    description: 'Portrait of the legendary German composer and pianist.',
+    description: 'Portrait of the legendary German composer and pianist. heard this guy turned deaf. How musical!',
     url: 'images/beethoven.jpg',
   },
   {
     id: 'photo-5',
-    title: 'Classic Wooden Guitar Toy',
-    description: 'A miniature acoustic wooden guitar instrument for aspiring young musicians.',
+    title: 'A Ture Instument of Musical Glory',
+    description: 'What do you mean this is spongebob related? This is an acustic guitar. Truly, musical',
     url: 'images/wooden-guitar-toy.jpg',
   },
   {
     id: 'photo-6',
-    title: 'Sheet Music Score',
-    description: 'Musical score notation sheet from MuseScore.',
-    url: 'https://musescore.com/static/musescore/scoredata/g/e52f81502d25aeb40d2a15b2a9c2af9cede5f909/score_0.svg?no-cache=1715695802',
+    title: 'Music',
+    description: 'This should be Careless Whisper, you know the one saxophone song that goes Bra braa bra Pra pra a Ber ber, ya know, very musical',
+    url: 'images/ElizaFirst_BIG.gif',
   },
   {
     id: 'photo-7',
