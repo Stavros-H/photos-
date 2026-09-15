@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "CqhhllghhzziySvCutJ0k"
+uri = "file://images/music-note-sheet.jpg"
+type = "image"
+title = "Music note sheet image"
+description = "Downloaded from the provided iStock URL and saved locally as images/music-note-sheet.jpg. Check iStock licensing before publishing or redistributing it."
+logical_id = "16555667-a83b-42ec-87a3-4f03d4d65b58"
+content_hash = "sha256:01a3f5922cd88994da1fb144b46317c5bad8ddc6a720a03821516d4e6db80342"
+size = 53572
+mtime_ms = 1789495629009
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:17baa38c-1072-48c7-94c7-4e747732068c/16555667-a83b-42ec-87a3-4f03d4d65b58/e8186dec-aab5-4520-b3c5-be82d7dd3ccb"
+storage_version_token = "1789495637502243"
+content_type = "image/jpeg"
