@@ -46,9 +46,9 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-7',
-    title: 'Spiral Shell',
-    description: 'A spiral nautilus conch shell showcasing natural golden ratio geometry.',
-    url: 'images/spiral-shell.jpg',
+    title: 'Lin-Manuel Miranda',
+    description: "This isn't a \"spiral shell\" but instead, it's Lin Manuel Miranda, the creator of Hamilton (the musical). How... theatre",
+    url: 'images/lin-manuel-miranda.jpg',
   },
   {
     id: 'photo-8',
