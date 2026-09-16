@@ -46,9 +46,9 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-7',
-    title: 'Minimalist Interior',
-    description: 'Clean angles and soft ambient lighting in a modern room.',
-    url: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&h=600&fit=crop&q=80',
+    title: 'Spiral Shell',
+    description: 'A spiral nautilus conch shell showcasing natural golden ratio geometry.',
+    url: 'images/spiral-shell.jpg',
   },
   {
     id: 'photo-8',
