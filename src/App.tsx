@@ -40,9 +40,9 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-6',
-    title: 'Music',
-    description: 'Pretend this is Careless Whisper, you know the one saxophone song that goes Bra braa bra Pra pra a Ber ber, ya know, very musical',
-    url: 'images/careless-whisper-sheet-music.png',
+    title: 'Music Notes',
+    description: "I wanted to get a music sheet, but they were all copyrighted. Big sad. Would've been very musical.",
+    url: 'images/music-notes-wave-lines-sheet.jpg',
   },
   {
     id: 'photo-7',
