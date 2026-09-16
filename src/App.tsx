@@ -46,7 +46,7 @@ const PHOTOS: PhotoItem[] = [
   },
   {
     id: 'photo-7',
-    title: 'Lin-Manuel Miranda',
+    title: 'Lin-Manuel Miranda (photo by Philip Romano)',
     description: "Creator of Hamilton the Musical. wow. How Theatre",
     url: 'images/lin-manuel-miranda.jpg',
   },
